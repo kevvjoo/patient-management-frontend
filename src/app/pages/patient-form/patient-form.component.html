@@ -1,0 +1,60 @@
+<h2>{{ id ? 'Edit Patient' : 'New Patient' }}</h2>
+
+<form (ngSubmit)="save()" #frm="ngForm">
+
+  <mat-form-field class="full">
+    <mat-label>PID</mat-label>
+    <input matInput [(ngModel)]="patient.pid" name="pid" required>
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="patient.firstName" name="firstName" required>
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="patient.lastName" name="lastName" required>
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Date of Birth</mat-label>
+    <input matInput type="date" [(ngModel)]="patient.dob" name="dob" required>
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Gender</mat-label>
+    <mat-select [(ngModel)]="patient.gender" name="gender" required>
+      <mat-option value="Male">Male</mat-option>
+      <mat-option value="Female">Female</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Phone</mat-label>
+    <input matInput [(ngModel)]="patient.phone" name="phone">
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Address</mat-label>
+    <input matInput [(ngModel)]="patient.address" name="address">
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Suburb</mat-label>
+    <input matInput [(ngModel)]="patient.suburb" name="suburb">
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>State</mat-label>
+    <input matInput [(ngModel)]="patient.state" name="state">
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Postcode</mat-label>
+    <input matInput [(ngModel)]="patient.postcode" name="postcode">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Save</button>
+  <button mat-button routerLink="/patients">Cancel</button>
+</form>
