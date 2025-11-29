@@ -1,59 +1,52 @@
-# PatientManagementFrontend
+# Patient Management Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.1.
+A modern Angular application for managing patient data with Angular Material.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Patient list management with search functionality
+- Responsive design using Angular Material
+- Server-side rendering (SSR) support
+- Modern Angular 21 with standalone components
+- TypeScript for type safety
 
-```bash
-ng serve
-```
+## Prerequisites
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Node.js (version 18 or higher)
+- npm (version 10.8.2 or higher)
 
-## Code scaffolding
+## Getting Started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Clone the Repository
 
 ```bash
-ng generate --help
+git clone https://github.com/kevvjoo/patient-management-frontend.git
+cd patient-management-frontend
 ```
 
-## Building
-
-To build the project run:
+### Install Dependencies
 
 ```bash
-ng build
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### Run the Application
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
+The app will run on `http://localhost:4200`
 
-For end-to-end (e2e) testing, run:
+## Build
 
 ```bash
-ng e2e
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Technologies
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Angular 21
+- Angular Material
+- TypeScript
+- RxJS
